@@ -20,7 +20,7 @@ public class MotoXNetActivity implements IXposedHookInitPackageResources {
 		//KitKat makes it a bit more work.
 		else {
 			//Easy part - just change the boolean value to enable activity indicators.
-			//resparam.res.setReplacement("com.android.systemui", "bool", "config_disable_wide_activity_statusbar_icons", false);
+			resparam.res.setReplacement("com.android.systemui", "bool", "config_disable_wide_activity_statusbar_icons", false);
 
 			/*
 			 * If we just enable the indicators, the wifi icon bounces around in the statusbar whenever the network is active.
